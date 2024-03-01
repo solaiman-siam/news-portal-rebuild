@@ -69,6 +69,8 @@ let showNews = async(catId) => {
     })
     if(newsContainer.innerHTML === ''){
         document.getElementById('no-content-found').classList.remove('hidden')
+    }else{
+        document.getElementById('no-content-found').classList.add('hidden')
     }
 }
 
@@ -92,7 +94,7 @@ let searchNews = () => {
     let input = document.getElementById('input-field');
     let val = input.value;
     showNews(val)
-    
+
 }
 
 loadNews()
