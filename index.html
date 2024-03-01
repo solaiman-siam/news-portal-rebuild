@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#e0e0e0]">
+
+    <header class="container mx-auto px-28 lg:px-6">
+        <nav class="flex justify-between items-center pt-6 pb-4 *:font-semibold ">
+            <div class="flex ">
+                <h3 class="px-3 py-2 bg-[#5d5fef] rounded-lg text-white ">News</h3>
+                <h3 class="px-3 py-2  rounded-lg  " >Portal</h3>
+            </div>
+            <div class="flex gap-6 *:font-bold text-[#706f6f]">
+                <h4 class="text-[#5d5fef] border-b-2 pb-1 border-black"><a href="">News</a></h4>
+                <h4><a href="">Blog</a></h4>
+            </div>
+        </nav>
+        <div class="border mb-5 border-[#e0e0e0]"></div>
+
+        <div id="link-container" class="flex list-none justify-center gap-10 *:font-medium text-[#3d3d3d] mb-4">
+            <!-- <li><a href="">Home</a></li>
+            <li><a href="">Homes</a></li>
+            <li><a href="">Homes</a></li>
+            <li><a href="">Homes</a></li>
+            <li><a href="">Homes</a></li>
+            <li><a href="">Homes</a></li> -->
+        </div>
+        <div class="flex justify-center items-center">
+            <input id="input-field" class=" focus:outline-none my-5 bg-[#fff] w-7/12 rounded-lg px-4 py-3" placeholder="Search" type="text">
+            <button onclick="searchNews()" class="btn bg-[#5d5fef] hover:bg-[#5d5fef] text-white font-medium -ml-2">Search</button>
+        </div>
+    </header>
+    <main class="container mx-auto px-28 lg:px-6 py-6 flex flex-col gap-6" id="main-div">
+       
+        
+    </main>
+    <footer>
+        <div id="loading" class="py-32  flex justify-center items-center hidden">
+            <span class="loading loading-bars loading-lg"></span>
+
+        </div>
+
+        <div id="no-content-found" class="flex justify-center items-center flex-col py-10 hidden">
+            <img class="w-52 " src="images/no-content.png" alt="">
+            <h3 class="text-2xl font-semibold py-4 text-red-400">Sorry!! No Content Found!</h3>
+        </div>
+    </footer>
+    
+
+
+    <script src="script/app.js"></script>
+</body>
+</html>
